@@ -50,8 +50,10 @@ jobs:
           name: website
           path: website
 
-      - name: Login via Azure CLI
+      - name: See if CLI Installed
         run: az --version
+
+      - name: Login via Azure CLI
         uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}

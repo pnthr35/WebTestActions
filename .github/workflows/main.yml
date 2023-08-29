@@ -50,13 +50,11 @@ jobs:
           name: website
           path: website
 
-      - name: See if CLI Installed
-        run: az --version
-
       - name: Login via Azure CLI
         uses: azure/login@v1
         with:
-          credentials: ${{ secrets.AZURE_CREDENTIALS }}
+          creds: '{"clientId":"${{ secrets.CLIENT_ID }}","clientSecret":"${{ secrets.CLIENT_SECRET }}","subscriptionId":"${{ secrets.SUBSCRIPTION_ID }}","tenantId":"${{ secrets.TENANT_ID }}"}'
+          allow-no-subscriptions: true
 
       - name: Deploy web app
         id: deploywebapp

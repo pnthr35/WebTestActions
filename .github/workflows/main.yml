@@ -49,6 +49,9 @@ jobs:
         with:
           name: website
           path: website
+    
+      - name: See info
+        run: echo "${{ AZURE_CREDENTIAL }}"
 
       - name: Login via Azure CLI
         uses: azure/login@v1

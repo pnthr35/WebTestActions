@@ -49,14 +49,11 @@ jobs:
         with:
           name: website
           path: website
-    
-      - name: See info
-        run: echo "${{ secrets.clientId }}"
 
       - name: Login via Azure CLI
         uses: azure/login@v1
         with:
-          creds: '{"clientId":"${{ secrets.CLIENT_ID }}","clientSecret":"${{ secrets.CLIENT_SECRET }}","subscriptionId":"${{ secrets.SUBSCRIPTION_ID }}","tenantId":"${{ secrets.TENANT_ID }}"}'
+          creds: '{"clientId":"${{ secrets.clientId }}","clientSecret":"${{ secrets.clientSecret }}","subscriptionId":"${{ secrets.subscriptionId }}","tenantId":"${{ secrets.tenantId }}"}'
           allow-no-subscriptions: true
 
       - name: Deploy web app

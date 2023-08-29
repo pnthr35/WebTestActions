@@ -53,8 +53,7 @@ jobs:
       - name: Login via Azure CLI
         uses: azure/login@v1
         with:
-          creds: '{"clientId":"${{ secrets.clientId }}","clientSecret":"${{ secrets.clientSecret }}","subscriptionId":"${{ secrets.subscriptionId }}","tenantId":"${{ secrets.tenantId }}"}'
-          allow-no-subscriptions: true
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: Deploy web app
         id: deploywebapp

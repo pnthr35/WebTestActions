@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "fd4zfUoNJnE7g6xlCFAN7fzeTjAiQH1O6nDpXeEQj7j6s2qQbNeN0eg1P1WtXgJDWZtQkXxemZDSVid/qn+4Xg==",
+  "dgSpecHash": "OI4OufzCdLdMwf69DcfEInncr49OYVMsVRjnuwIm7501TGXy37wUwugOhiLFFWm6peRlcVgRH/uwbDPcNr5mBQ==",
   "success": true,
-  "projectFilePath": "/Users/am/LearnNet/WebTestActions/WebTestActions.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/am/RiderProjects/WebTestActions/WebTestActions.csproj",
+  "expectedPackageFiles": [
+    "/Users/am/.nuget/packages/microsoft.netcore.app.ref/6.0.20/microsoft.netcore.app.ref.6.0.20.nupkg.sha512",
+    "/Users/am/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.20/microsoft.aspnetcore.app.ref.6.0.20.nupkg.sha512",
+    "/Users/am/.nuget/packages/microsoft.netcore.app.host.osx-x64/6.0.20/microsoft.netcore.app.host.osx-x64.6.0.20.nupkg.sha512"
+  ],
   "logs": []
 }
